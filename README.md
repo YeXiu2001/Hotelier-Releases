@@ -1,35 +1,8 @@
 # Hotelier Database Handoff
+1. Download latest release of Hotelier
+2. Download database.sqlite
 
-Use this when passing an existing Hotelier NativePHP desktop database to another Windows computer.
-
-## On Your Computer
-
-1. Close the Hotelier desktop app.
-2. Open a terminal in the project folder:
-
-```bash
-cd /Users/raymart/Herd/hotelier
-```
-
-3. Make sure SQLite writes any pending data into the main database file:
-
-```bash
-sqlite3 database/nativephp.sqlite "PRAGMA wal_checkpoint(FULL);"
-```
-
-4. Send this file to the other computer:
-
-```text
-database/nativephp.sqlite
-```
-
-5. Rename the sent file to:
-
-```text
-database.sqlite
-```
-
-## On The Other Windows Computer
+## On Windows Computer
 
 1. Install Hotelier.
 2. Open Hotelier once, then close it.
@@ -52,7 +25,7 @@ Win + R
 database.sqlite
 ```
 
-with the `database.sqlite` file you received.
+with the `database.sqlite` file you downloaded here.
 
 7. Open Hotelier again.
 
